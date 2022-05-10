@@ -1,0 +1,269 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/unique" type="text/css"/>
+    <meta http-equiv="refresh" content="">
+    <style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    }
+
+body{
+background-image: url("imageg/back2.jpg");
+background-size: cover;
+}
+.container{
+    width: 17em;
+    height: 25em;
+    border: 2px solid transparent;
+    box-shadow:2px 2px 5px #ebd2d2,-2px 2px 5px  #ebd2d2,2px -2px 5px  #ebd2d2,2px 2px 5px #ebd2d2,-2px 2px 5px  #ebd2d2,2px -2px 5px  #fff,2px 2px 5px #fff,-2px 2px 5px  #fff,2px -2px 5px  #fff,2px 2px 5px #aca4a4,-2px 2px 5px  #aca4a4,2px -2px 5px  #aca4a4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: transparent;
+    margin-top: 20px;
+  margin-right: 10pt;
+right: 0;
+transition: 1s;
+position: absolute;
+top: -1000px;
+
+}
+.container.active{
+    top: 20px;
+}
+h1{
+    text-indent: 5px;
+    font-size:20px;
+    position: absolute;
+    top: 10%;
+    outline: none;
+    font-family: 'UniqueRegular';
+   font-weight: normal;
+   font-style: normal;
+   color: #ebd2d2;
+   text-shadow:1px -2px 4px #f5cf96,2px -3px 4px #f5cf96;
+}
+input[type="button"]{
+  transform: translate(170%);
+  outline: none;
+  border: 2px solid transparent;
+  box-shadow:1px 1px 2px #c9c9c0,-1px 1px 2px #c9c9c0,1px -1px 2px #c9c9c0;
+  background: transparent;
+  cursor: pointer;
+  transition:0.9s;
+  color:rgba(236, 239, 241, 0.5);
+  text-align: center;
+  font-weight:bold;
+  font-family: 'WaltographRegular';
+   font-weight: normal;
+   font-style: normal;
+}
+input[type="button"]:active{
+    background-color:rgb(218, 240, 238);
+      opacity: 0.5;
+      color:#fff;
+    transition:0.3s;
+    border-radius: 5px;
+    
+}
+input[type="text"]{
+    font-family: 'KhushaNumaRegularRegular';
+   font-weight: normal;
+   font-style: normal;
+    border-radius: px;
+    color:white;
+ font-size: small;
+ background: transparent;
+  outline: none;
+  border: 2px solid transparent;
+  box-shadow:1px 1px 2px #c9c9c0,-1px 1px 2px #c9c9c0,1px -1px 2px #c9c9c0;
+ 
+}
+input[type="password"]{
+    color:white;
+    font-family: 'KhushaNumaRegularRegular';
+   font-weight: normal;
+   font-style: normal;
+ font-size: small;
+ border-radius: px;
+ background: transparent;
+  outline: none;
+  border: 2px solid transparent;
+  box-shadow:1px 1px 2px #c9c9c0,-1px 1px 2px #c9c9c0,1px -1px 2px #c9c9c0;
+  outline: none;
+}
+.mdp{
+    color: black;
+    text-decoration: none;
+    position: relative;
+    left: -29px;
+}
+.mdp:active{
+color: #f5cf96;
+text-decoration:underline  ;
+}
+.ctc a{
+    font-weight: bold;
+    color: blue;
+    text-decoration: none;
+}
+footer{
+position: relative;
+    top: 85px;
+}
+sub{
+    font-family: "Open Sans";
+    font-size: small;
+    font-style: oblique;
+}
+
+sub a{
+    color: red;
+
+}
+
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color:transparent;
+    margin-left: 20px;
+}
+li{
+    display: inline;
+    float: left;
+}
+.home{
+    display: block;
+  padding: 8px;
+  
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  transition: 0.5s;
+}
+li a:hover {
+    font-size: 15px;
+    transition: 0.5s;
+}
+li a:active {
+    font-size: 30px;
+    transition: 0.5s;
+}
+li a::first-letter{
+    font-weight: 900;
+    text-transform: uppercase;
+    color: tomato;
+}
+pre{
+    padding: 4px 4px;
+    color: yellow;
+    font-size: 20px;
+    cursor: pointer;
+    float: right;
+    border-radius: 50%;
+    transition: 1s;
+    position: absolute;
+    top:5px;
+}
+pre:hover{
+    font-size: 25px;
+    transition: 0.3s;
+}
+.open{
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 25px;
+    width: 30px;
+    text-align: center;
+}
+.navbar{
+width:50%;
+position: absolute;
+left:-1000px;
+transition: 1s;
+}
+.navbar.active{
+    left: 0px;
+}
+@media screen and(max-width:500px) {
+    body{
+        background: black;
+        text-indent: wrap;
+        font-size: 10px;
+
+    }
+    
+}
+    </style>
+    <title>Login to Janeiro </title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+</head>
+<body>
+    
+    <div class="container" id="login">
+
+        <h1>welcome to janeiro</h1>
+        <form action="j.php" method="get">
+        <input type="text" placeholder="Enter ur name" name="nom " id="m" autofocus>
+        <br>
+        <br>
+        <input type="password" placeholder="Enter ur password" name="pwd"> 
+        <br>
+        <br>
+        <input type="button" value="Login">
+        <br>
+        <br>
+        <p>  <a href="" class="mdp">Mot passe oublie</a></p>
+        <br>
+        <br>
+        <br>
+      <center><div class="ctc"><a href="registration from janeiro.html" target="_blank">Create ur account</div></a></center>
+      
+      <footer>&copy;2022<sub><a href=" https://www.facebook.com/janeirohurley" target="_blank">design by janeiro</a></sub></footer>
+
+       </form>
+       <pre  onclick="login()"><span>x</span></pre>
+    </div>
+    
+    <p class="open"  onclick="op()">&gt;</p>
+    <div class="navbar" id="navbar">
+       <ul>
+           <li><a href="#" class="home" onclick="home()">home</a></li>
+           <li><a href="#" class="home" onclick="login()">login</a></li>
+           <li><a href="#" class="home">registration
+           </a></li>
+           <li><a href="mailto:janeirohurley@gmail.com" class="home">services</a></li>
+           <li><a href="#" class="home">settings</a></li>
+           <li><a href="#" class="home">help</a></li>
+       </ul> 
+        
+    </div>
+    <script>
+      function op() {
+          const ab = document.getElementById("navbar");
+          ab.classList.toggle('active');
+      }
+      function login() {
+          const ab = document.getElementById("login");
+          ab.classList.toggle('active');
+      }
+    </script>
+</body>
+</html>
